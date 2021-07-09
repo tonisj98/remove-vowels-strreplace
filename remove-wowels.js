@@ -3,7 +3,8 @@ module.exports = function(frase) {
    
     // Obligatorio: utilizar una expresión regular y el método de string "replace": https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/replace
 
-    let resultado = "IMPLEMENTAME!!";
+    let regexp = /[AEIOU]/gi;
+    let resultado = frase.replace(regexp, '');
 
     return resultado;
 }
